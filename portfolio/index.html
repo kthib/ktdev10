@@ -3,12 +3,53 @@
 <!--
   Name: Krystal Thibault
   Date Created: 02.08.20
-  Most recent revision: 02.09.20
+  Most recent revision: 02.14.20
   -->
 
 <html lang="en">
     <head>
       <title>Krystal Thibault's Portfolio</title>
+      <link href="styles/main.css" rel="stylesheet" type="text/css" />
+      <style>
+        caption {
+          font-weight: bold;
+          font-size: 1.2em;
+          margin-bottom: 8px;
+        }
+        table, th, td {
+          border:1px solid #0d1f2d;
+          border-collapse: collapse;
+          padding: 5px 10px;
+        }
+        table {
+          width: 90%;
+          margin: auto;
+        }
+        tr {
+          height: 30px;
+        }
+        th {
+          background-color: #546a7b;
+          color: #f2eded;
+        }
+        tr:nth-child(odd) {
+          background-color: #e4c3ad;
+        }
+
+        /* Creating article layouts */
+
+        article img {
+            float:left;
+        }
+
+        .right-content {
+            float:left;
+        }
+
+        article {
+            margin-bottom: 16px;
+        }
+      </style>
     </head>
 
     <body>
@@ -19,34 +60,37 @@
       </header>
 
     <nav> <!-- The nav element will include navigation buttons or links. -->
-      <hr />
-        <p>
-          <a href="projects.html">Projects</a>
-          <a href="contact.html">Contact</a>
-          <a href="testimonials.html">Testimonials</a>
-          <a href="https://www.wihumane.org/adopt" target=_blank>Wisconsin Humane Society</a>
-          <a href="#target">This will take you somewhere.</a>
-        </p>
-      <hr />
+          <p><a href="projects.html">Projects</a></p>
+          <p><a href="contact.html">Contact</a></p>
+          <p><a href="testimonials.html">Testimonials</a></p>
+          <p><a href="https://www.wihumane.org/adopt" target=_blank>Wisconsin Humane Society</a></p>
+          <p><a href="#target">This will take you somewhere.</a></p>
+        <div class="clear-float"></div>
     </nav>
 
     <section> <!-- The section element contains the three chunks we are using to sell ourselves in this page. -->
       <article id="about-me"> <!-- This is the first chunk inside the section element. -->
         <h2><em>About Me</em></h2>
-          <img src="images/bwcat.jpg" alt=Portrait of black and white cat" width="250" />
-          <p>Cat ipsum dolor sit amet. Wake up wander around the house <strong>making large amounts of noise</strong> jump on top of your human's bed and fall asleep again get scared by sudden appearance of cucumber. Rub whiskers on bare skin act innocent leave dead animals as gifts chase ball of string or hopped up on catnip. <span style="background-color:black; color:lightblue; border:thin solid red">Rub face on everything</span> head nudges so mesmerizing birds warm up laptop with butt lick butt fart rainbows until owner yells pee in litter box hiss at cats. Rub against owner because nose is wet kitty poochy or chase ball of string wack the mini furry mouse and push your water glass on the floor. Hide head under blanket so no one can see. Big eyes, big eyes, crouch, shake butt, prepare to pounce sleeps on my head for meow meow, i tell my human. Drool pounce on unsuspecting person so sleep all day. </p>
-          <p id="target">Cat ipsum dolor sit amet <strong><span style="background-color: red; color: white; border:dotted black;">this is the target and you've been taken here.</span></strong> <a href="#goback"><span style="background-color: lightblue; color: green; border:dotted black;">Now get along (go back), little doggy!</span></a> Purrrrrr instantly break out into full speed gallop across the house for no reason. Purr fish i must find my red catnip fishy fish. <span style="background-color: lightpink; border:thin solid yellow">Taco cat backwards spells taco cat.</span> Do i like standing on litter cuz i sits when i have spaces, my cat buddies have no litter i live in luxury cat life this human feeds me, i should be a god yet kick up litter for yowling nonstop the whole night and knock dish off table head butt cant eat out of my own dish for kitty kitty so cry louder at reflection. Climb a tree, more napping all the <strong>napping is exhausting.</strong> Cat ipsum dolor sit amet, brown cats with pink ears chase after silly colored fish toys around the house carefully drink from water glass and then spill it everywhere and proceed to lick the puddle. Find box a little too small and curl up with fur hanging out step on your keyboard while you're gaming and then turn in a circle. Always hungry curl up and sleep on the freshly laundered towels. Meowing chowing and wowing poop on floor and watch human clean up and give me some of your food give me some of your food give me some of your food meh, i don't want it unwrap toilet paper, yet decide to want nothing to do with my owner today for when in doubt, wash. </p>
+          <img src="images/bwcat.jpg" alt="Portrait of black and white cat" width="250" />
+          <p>Cat ipsum dolor sit amet. Wake up wander around the house <strong>making large amounts of noise</strong> jump on top of your human's bed and fall asleep again. <span style="background-color:black; color:lightblue; border:thin solid red">Rub face on everything</span> head nudges so mesmerizing birds warm up laptop. Rub against owner because nose is wet. Hide head under blanket so no one can see. Big eyes, big eyes, crouch, shake butt, prepare to pounce.</p>
+          <p id="target">Cat ipsum dolor sit amet <strong><span style="background-color: red; color: white; border:dotted black;">this is the target and you've been taken here.</span></strong> <a href="#goback"><span style="background-color: lightblue; color: green; border:dotted black;">Now get along (go back), little doggy!</span></a> Purrrrrr instantly break out into full speed gallop across the house for no reason. Purr fish i must find my red catnip fishy fish. <span style="background-color: lightpink; border:thin solid yellow">Taco cat backwards spells taco cat.</span></p>
+          <div class="clear-float"></div>
       </article>
+
       <article id="past-experiences"> <!-- This is the second chunk inside the section element. -->
         <h2><em>Past Experiences</em></h2>
-          <img src="images/gcat.jpg" alt=Portrait of small gray cat" width="250" />
+          <img src="images/gcat.jpg" alt="Portrait of small gray cat" width="250" />
+          <div class="right-content">
           <table>
             <caption>Employment History</caption>
+            <thead>
               <tr>
                 <th>Years of Employment</th>
                 <th>Title</th>
                 <th>Company</th>
               </tr>
+            </thead>
+            <tbody>
               <tr>
                 <td>2018-Present</td>
                 <td>Mouse Hunter</td>
@@ -62,11 +106,16 @@
                 <td>Professional Meower</td>
                 <td>The Academy of Meow</td>
               </tr>
+            </tbody>
           </table>
+          </div>
+          <div class="clear-float"></div>
       </article>
+
       <article id="hobbies"> <!-- This is the third chunk inside the section element. -->
         <h2><em>Hobbies</em></h2>
-          <img src="images/bcat.jpg" alt=Portrait of black cat" width="250" />
+          <img src="images/bcat.jpg" alt="Portrait of black cat" width="250" />
+          <div class="right-content">
           <ul>
             <li>Food I Like</li>
               <ol>
@@ -93,12 +142,12 @@
                 <li>Watching for mailperson and then fleeing in terror when they walk up to the door</li>
               </ul>
             </ul>
-
-      </article>
-    </section>
+          </div>
+        </article>
+          <div class="clear-float"></div>
+      </section>
 
     <footer> <!-- The footer is a block at the bottom of the page. -->
-      <hr />
       <p> &copy; 2020 Krystal Thibault. All rights reserved.</p>
     </footer>
   </main>
