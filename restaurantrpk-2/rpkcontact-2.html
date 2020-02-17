@@ -2,94 +2,181 @@
 
 <!--
   Name: Krystal Thibault
-  Assignment: Restaurant Website
-  Date Created: 02.11.20
-  Most recent revision: 02.15.20
+  Assignment: Restaurant Website 2
+  Date Created: 02.15.20
+  Most recent revision: 02.17.20
   Copyright 2020 Krystal Thibault. All rights reserved.
   Feedback welcome!
   -->
 
 
 <html lang="en">
-    <head>
-      <title>Contact Red Plate Kitchen</title>
-    </head>
+
+<head>
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Contact Red Plate Kitchen</title>
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- External Style Sheet -->
+  <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+<style>
+  /* Form Styling */
+
+  button[type=submit] {
+    background-color: #961313;
+    color: #e0e2db;
+    border: none;
+    padding: 4px 8px;
+  }
+
+  button[type=submit]:hover {
+    background-color: #961313;
+    color: #e0e2db;
+    border: none;
+    font-weight: bold;
+  }
+
+  .row {
+    text-align: right;
+  }
+
+input[type=name], input[type=email], input[type=phone], select, textarea {
+  max-width: 70%
+}
+
+</style>
+
+</head>
+
+
 
 <body>
-  <main><!-- The main element contains all blocks on the page -->
 
     <header> <!-- The header element contains only the main title. -->
-      <center><h1>Red Plate Kitchen</h1></center>
+      <h1>Red Plate Kitchen</h1>
     </header>
 
     <nav> <!-- The nav element includes navigation buttons or links. -->
-      <hr />
         <p>
           <a href="rpkindex-2.html">Home</a>
           <a href="rpkmenu-2.html">Menu</a>
           <a href="rpkcontact-2.html">Contact Us</a>
+         <div class="clear-float"></div>
         </p>
-      <hr />
     </nav>
 
-      <section>
-        <article id="contact-request">
-          <center>
-            <form action="submit.html" method="POST">
-              <label for="Name">Name:</label>
-                <input type ="text" id="Name" name="Name"><br />
-              <label for="email">Email:</label>
-                <input type="text" id="email" name="email"><br />
-              <label for="phone">Phone:</label>
-                <input type="text" id="phone" name="phone"><br />
+<section>
+  <article id="contact-request">
 
-              <label for="contact">Reason for Inquiry:</label>
-                <select id="contact" name="contact">
-                  <option value="catering" selected>Catering</option>
-                  <option value="privateparty">Private Party</option>
-                  <option value="feedback">Feedback</option>
-                  <option value="other">Other</option>
-                </select>
-                <br />
+<div class="container">
 
-              <label for="info">Additional Information:</label>
-                <textarea id="info" name="info"></textarea>
-                <br />
+<form>
+<div class="form-group row">
+  <label for="inputName" class="col-4 col-form-label"><b>Name:</b></label>
+  <div class="col-8">
+    <input type="name" class="form-control" id="inputName" placeholder="">
+  </div>
+</div>
 
-                <p>Have you been to the restaurant?
-                  <input type="radio" id="choice2" name="questionnaire" value="no">
-                    <label for="choice2">No</label>
-                  <input type="radio" id="choice1" name="questionnaire" value="yes">
-                    <label for="choice1">Yes</label></p>
+<div class="form-group row">
+  <label for="inputEmail" class="col-4 col-form-label"><b>Email:</b></label>
+  <div class="col-8">
+    <input type="email" class="form-control" id="inputEmail" placeholder="">
+  </div>
+</div>
 
-                <p>Best days to contact you:
-                  <input type="checkbox" id="frontEnd" name="day" value="M">
-                    <label for="frontEnd">M</label>
-                  <input type="checkbox" id="backEnd" name="day" value ="T">
-                    <label for="backEnd">T</label>
-                  <input type="checkbox" id="database" name="day" value="W">
-                    <label for="database">W</label>
-                  <input type="checkbox" id="backEnd" name="day" value ="Th">
-                    <label for="backEnd">Th</label>
-                  <input type="checkbox" id="database" name="day" value="F">
-                    <label for="database">F</label></p>
+<div class="form-group row">
+  <label for="inputPhone" class="col-4 col-form-label">Phone:</label>
+  <div class="col-8">
+    <input type="phone" class="form-control" id="inputPhone" placeholder="">
+  </div>
+</div>
 
-              <input type="submit" name="submit" value="Send Request">
-            <br />
-            <br />
-            <br />
-            </center>
+<div class="form-group row">
+    <label for="reason" class="col-4 col-form-label"><b>Reason for Inquiry:</b></label>
+      <div class="col-8">
+      <select class="form-control">
+        <option>Catering</option>
+        <option>Private Party</option>
+        <option>Feedback</option>
+        <option>Other</option>
+  </select>
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="info" class="col-4 col form-label">Additional Information:</label>
+    <div class="col-8">
+      <textarea class="form-control" id="info" rows="7"></textarea>
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="haveYouBeen" class="col-4 col form-label"></b>Have you been to the restaurant?</b></label>
+  <div class="col-auto">
+  <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="no" checked>
+      <label class="form-check-label" for="inlineRadio1">No</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="yes">
+      <label class="form-check-label" for="inlineRadio2">Yes</label>
+    </div>
+    </div>
+</div>
+
+<div class="form-group row">
+  <label for="bestDay" class="col-4 col form-label">Best days to contact you:</label>
+  <div class="col-auto">
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Monday">
+    <label class="form-check-label" for="inlineCheckbox1">M</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Tuesday">
+    <label class="form-check-label" for="inlineCheckbox2">T</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Wednesday">
+    <label class="form-check-label" for="inlineCheckbox1">W</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Thursday">
+    <label class="form-check-label" for="inlineCheckbox2">Th</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Friday">
+    <label class="form-check-label" for="inlineCheckbox1">F</label>
+  </div>
+</div>
+
+</div>
+
+<div class="form-group row">
+  <div class="col-md-7 col-md-offset-4">
+<button type="submit" class="btn btn-primary">Send Request</button>
+</div>
+</div>
+</div>
+
+</div>
+</form>
+
         </article>
       </section>
 
-      <footer> <!-- The footer is a block at the bottom of the page. Normally would also include copyright, but for the purpose of this assignment, omitting. -->
-        <hr />
-        <center>
-        <p>1357 Park Way, Milwaukee, WI, 53200</p>
-        <p>971.000.3519</p>
-        </center>
-        <hr />
-      </footer>
+<footer> <!-- The footer is a block at the bottom of the page. Normally would also include copyright, but for the purpose of this assignment, omitting. -->
+  <p>1357 Park Way, Milwaukee, WI, 53200</p>
+  <p>971.000.3519</p>
+</footer>
 
-    </body>
-</html
+
+</body>
+</html>
