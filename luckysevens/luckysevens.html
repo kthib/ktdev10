@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<!--
+    Name: Krystal Thibault
+    Date Due: 02.20.20
+    Feedback welcome!
+-->
+
+<html lang="en">
+   
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="luckysevens.js"></script>
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Lucky Sevens</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+<style>
+    /* Colors
+    #2E3235 - jet
+    #8C6224 - grizzly (brown)
+    #DCE2DC - gainsboro (light gray)
+    #C8D3C6 - pastel / med gray
+    #BDEFCD - MAGIC MINT
+    */
+    
+body {
+    background-color: #DCE2DC;
+    color: #2E3235;
+    font-family: 'Shadows Into Light';
+    text-align: center;
+    max-width: auto;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: #BDEFCD;
+    color: #2E3235;
+    font-family: 'Shadows Into Light';
+    height: 150px;
+    text-align: center;
+    padding: 50px 10px 20px 10px;
+}
+    
+header {
+    margin-bottom: 30px;
+    }
+    
+.btn {
+    background-color: #BDEFCD;
+    font-family: 'Shadows Into Light';
+    color: #2E3235;
+    border-color: #2E3235;
+    padding: 10px;
+    margin: 20px;
+    width: 150px;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
+.btn:hover {
+  background-color: forestgreen;
+  color: white;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.btn:active {
+  background-color: #BDEFCD;
+  color: #b7b7b5;
+  font-weight: bold;
+  text-decoration: none;
+}
+    
+label {
+    text-align: right;
+    padding: 5px 0px 0px 0px;
+  }
+ 
+form, td {
+    font-size: 1.3em;
+    }
+    
+input[type=number] {
+    max-width: 150px;
+    }
+
+hr {
+    max-width: 70%;
+    }
+    
+</style>      
+</head>
+
+<body>
+    <header>
+        <h1><span style='font-size:40px;'>&#127808; &#127922;</span> Lucky Sevens <span style='font-size:40px;'>&#127922; &#127808;</span></h1>
+    </header>
+    
+<div class="container col-xl-4 col-lg-5 col-md-6 col-sm-8 col-xs-10 col-offset-auto">
+    
+<form name="luckySevens" onsubmit=" return play();"> 
+   
+<!-- Starting bet starts the row -->
+<div class="form-group row">
+  <label for="bet" class="col-6 col-form-label"><h4><span style="">&#128176;</span>Starting bet:</h4></label>
+    
+<!-- Bet amount form same row -->
+  <div class="col-6">
+     <input type="number" id="bet" class="form-control" placeholder="$0.00">
+    </div>
+  </div>
+       
+<!-- Button new row -->
+   <div class="form-row text-center">
+    <div class="col-12">
+        <button type="submit" id="submitButton" class="btn btn-primary">Play!</button>
+    </div>
+       </div>
+
+</form>
+    <!-- To me, this table for results looks better without the striped effect. -->
+<div class="fixed-center">
+<table id="results" class="table" class ="center" style="display:none">
+
+     <thead>
+    <tr colspan="2">
+        <hr />
+    </tr>
+            
+    <tr>
+        <th colspan="2">
+        <h1>Results</h1></th>
+    </tr>
+    </thead>
+    
+    <tbody>
+        <tr>
+            <td align="right"><h4>Starting Bet</h4></td>
+            <td><span id="startBet"></span></td>
+        </tr>
+        <tr>
+            <td align="right"><h4>Total Rolls Before Going Broke</h4></td>
+            <td><span id="numRolls"></span></td>
+        </tr>
+        <tr>
+            <td align="right"><h4>Highest Amount Won</h4></td>
+            <td><span id="maxWon"></span></td>
+        </tr>
+        <tr>
+            <td align="right"><h4>Roll Count at Highest Amount Won</h4></td>
+            <td><span id="maxRolls"></span></td>
+        </tr>
+    </tbody>
+</table>
+
+</div>
+    </div>
+        
+<footer class="fixed-bottom"> <!-- The footer is a block at the bottom of the page. -->
+      <p> &copy; 2020 Krystal Thibault. All rights reserved. </p>
+</footer>    
+    
+<!-- More Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/*
+Name: Krystal Thibault
+Assignment: Restaurant Website 2
+Date Created: 02.15.20
+Most recent revision: 02.17.20
+Copyright 2020 Krystal Thibault. All rights reserved.
+Feedback welcome!
+*/
+
+/* Color Palette
+#30090d Dark Dark Dark Red
+#8b2635 Red
+#961313 Red Red Red
+#e0e2db Light gray
+#b7b7b5 Medium gray
+*/
+
+/*
+Alternative Palette
+#871111 - red
+#826861 - taupe
+#6A6564 - granite
+#FFF4ED - seashell
+#681C17 - dark red
+*/
+
+
+body {
+  background-color: #e0e2db;
+  font-family: 'Quicksand', sans-serif;
+  color: #6A6564;
+  text-align: center;
+  max-width: auto;
+  margin: 0 auto;
+}
+
+header, footer {
+  background-color: #871111;
+  color: #e0e2db;
+  height: 190px;
+  text-align: center;
+  padding: 55px 10px 20px 10px;
+}
+
+footer {
+  margin-top: 30px;
+}
+
+nav {
+    padding: 20px;
+}
+
+nav .btn {
+    background-color: #871111;
+    color: #e0e2db;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    margin: 20px;
+    width: 150px;
+    float: left;
+    font-size: 1.35em;
+    vertical-align: middle;
+}
+
+nav .btn:visited {
+    background-color: #961313;
+    color: #b7b7b5;
+    text-decoration: none;
+}
+
+nav .btn:hover {
+  background-color: #826861;
+  color: #e0e2db;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav .btn:active {
+    font-weight: normal;
+    color: #30090d;
+    text-decoration: none;
+}
+
+.material-icons {
+    position: relative;
+    font-size: .8em;
+    top: 4px;
+    }
+
+.clear-float {
+    clear:both;
+}

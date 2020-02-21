@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<!--
+  Name: Krystal Thibault
+  Assignment: Restaurant Website 3
+  Date Created: 02.19.20
+  Most recent revision: 02.19.20
+  Copyright 2020 Krystal Thibault. All rights reserved.
+  Feedback welcome!
+  -->
+
+
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Red Plate Kitchen's Menu</title>
+
+       
+<noscript>
+    <div class="error message">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <h3>JavaScript is Disabled</h3>
+            <p>For the best experience, please enable JavaScript.</p>
+            <p>Check your browser preferences to allow JavaScript, which websites use for buttons, forms, and other content. Some websites can’t work properly if you disable JavaScript.</p>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+</div>    
+</noscript>
+    
+
+    
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- External Style Sheet -->
+  <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+
+<style>
+
+.food {
+    width: 90%;
+    margin: 0 auto;
+    
+  }
+
+.beverages {
+    width:250px;
+    margin: 0 auto;
+  }
+
+table, td {
+  padding-top: 0px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  vertical-align: top;
+}
+
+th {
+  padding-top: 10px;
+}
+
+h2 {
+  font-size: 1.9em;
+  color: #961313;
+}
+
+h3 {
+  font-size: 1.1em;
+  color: #961313;
+}
+</style>
+
+</head>
+
+<body>
+  <main><!-- The main element contains all blocks on the page -->
+
+    <header> <!-- The header element contains only the main title. -->
+      <h1>Red Plate Kitchen</h1>
+        <h6>Big News! Our new location is on Miller Street!</h6>
+    </header>
+
+<nav>
+    <ul class="nav justify-content-center">
+        
+  <li class="nav-item">
+      <a href="rpkindex-3.html" class="btn nav-pill"><i class="material-icons">home</i> Home</a>
+  </li>
+    
+  <li class="nav-item">
+   <a href="rpkmenu-3.html" class="btn nav-pill">Menu</a>
+  </li>
+    
+  <li class="nav-item">
+    <a href="rpkcontact-3.html" class="btn nav-pill">Contact Us</a>
+  </li>
+    
+    </ul>
+    
+<div class="clear-float"></div>
+</nav>  
+
+  <section> <!-- The section element contains the restaurant menu laid out in a grid with three columns and two rows. -->
+    <article id="restaurant-menu">
+
+      <table class="food">
+        <tr>
+          <th colspan=3><h2>MEALS</h2></th>
+        </tr>
+        <tr>
+          <td>
+            <b><h3>Burger and Fries</h3></b>
+            An American Classic!<br />
+            Your choice - with or without cheese<br />
+            Pickle, onion, tomato, and lettuce<br />
+            Served with our famous thick cut<br />
+            french fries<br />
+            $7.95
+          </td>
+          <td>
+            <b><h3>Hot Dog and Chips</h3></b>
+            A Summer Classic!<br />
+            Your choice - white or wheat bun<br />
+            Relish, mustard, and ketchup<br />
+            Served with our house-made chips<br />
+            $7.95
+          </td>
+          <td>
+            <b><h3>Italian Sausage and Peppers</h3></b>
+            An All-Time Favorite!<br />
+            Your choice - mild or spicy<br />
+            Cole Slaw<br />
+            Served with garlic mashers<br />
+            $10.95
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b><h3>Tenderloin Sandwich and Chips</h3></b>
+            Really Hits the Spot!<br />
+            Plain or Sesame Seed Bun<br />
+            Pickle, onion, tomato, and lettuce<br />
+            Served with our house-made chips<br />
+            $8.95
+          </td>
+          <td>
+            <b><h3>House Salad</h3></b>
+            On the Lighter Side<br />
+            Your choice - with or without cheese<br />
+            Iceberg lettuce, tomatoes, peppers<br />
+            Thousand Island or Ranch Dressing<br />
+            Served with a dinner roll<br />
+            $6.95
+          </td>
+          <td>
+            <b><h3>Brisket Sandwich and Fries</h3></b>
+            A Taste of Texas!<br />
+            Smoked Brisket on thick-cut Texas Toast<br />
+            Cole Slaw<br />
+            Served with our famous thick-cut<br />
+            french fries<br />
+            $7.95
+          </td>
+        </tr>
+        </table>
+
+        <table class="beverages">
+          <tr>
+            <th colspan=2><h2>BEVERAGES</h2></th>
+          </tr>
+          <tr>
+            <td>Root Beer</td>
+            <td>&#36;3.00</td>
+          </tr>
+          <tr>
+            <td>Bottled Water</td>
+            <td>&#36;1.25</td>
+          </tr>
+          <tr>
+            <td>Lemonade</td>
+            <td>&#36;1.00</td>
+          </tr>
+          <tr>
+            <td>Iced Tea</td>
+            <td>&#36;1.25</td>
+          </tr>
+        </table>
+
+  </article>
+  </section>
+
+<footer> <!-- The footer is a block at the bottom of the page. Normally would also include copyright, but for the purpose of this assignment, omitting. -->
+  <p>1357 Park Way, Milwaukee, WI, 53200</p>
+  <p>971.000.3519</p>
+</footer>
+
+  </main>
+  </body>
+</html>
